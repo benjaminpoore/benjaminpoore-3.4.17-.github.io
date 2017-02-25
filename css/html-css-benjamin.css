@@ -193,7 +193,7 @@ body{
     }
 
     #name {margin: auto;
-        margin-top: center;
+        margin-top: auto;
     }
     #name_desktop {
         text-decoration: none;
@@ -213,7 +213,7 @@ body{
         justify-content: center;
     }
 
-    #menu {margin: center;
+    #menu {margin: auto;
     margin-bottom: .5em;
     }
 
