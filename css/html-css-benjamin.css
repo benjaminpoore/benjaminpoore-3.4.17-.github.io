@@ -13,12 +13,19 @@
         vertical-align: middle;
         border: 0;
     }
+    #name {margin: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    }
+    #name_desktop {
+        text-decoration: none;
+    }
 
+    #menu {margin: auto;}
     #page-header-div {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
-        font-size: 8pt;
         text-align: center;
 
         display: flex;
@@ -27,11 +34,12 @@
         flex-shrink: 2;
         border:2px solid;
         justify-content: space-around;
+        font-size: 8pt;
     }
 
     #page-search {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
         font-size: 12pt;
         text-align: justify;
@@ -51,7 +59,7 @@ body{
     background-color: grey;
     margin: 1%;
     padding: 0;
-    font-size: 18px;
+    font-size: 24pt;
     font-size: 1em;
     font-family: arial, "arial thin", sans-serif;
     text-align: center;
@@ -63,7 +71,7 @@ body{
 
     #city-date {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
         font-size: 12pt;
         text-align: center;
@@ -77,9 +85,9 @@ body{
 
     #current_div {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
-        font-size: 12pt;
+        font-size: 11pt;
         text-align: center;
         list-style: none;
 
@@ -95,6 +103,7 @@ body{
     }
     #current {
         list-style: none;
+        margin-left: -4em;
     }
     #hi-lo{
         list-style: none;
@@ -109,7 +118,7 @@ body{
 }
 
 #advertisement {
-    background-color: royalblue;
+    background-color: cornflowerblue;
     border: 2px groove black;
     position: static;
     float: right;
@@ -123,10 +132,19 @@ body{
        display: none;
     }
     #hourly-weather-desktop {
-        display: none;
+        margin-left: auto;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        position: static;
+        float: right;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: inline;
     }
   #hourly-weather {
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
         position: static;
         float: right;
@@ -174,22 +192,38 @@ body{
         background-color: yellow;
     }
 
-    #hourly-weather {
-        display: inline-block;
-        background-color: royalblue;
+    #name {margin: auto;
+        margin-top: center;
+    }
+    #name_desktop {
+        text-decoration: none;
+    }
+
+    #page-search {
+        margin: .5%;
+        background-color: cornflowerblue;
         border: 2px groove black;
-        position: static;
-        float: left;
-        width: 100%;
-        list-style: none;
-        text-align: center;
-        vertical-align: top;
-        display: inline-block;
+        font-size: 12pt;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #menu {margin: center;
+    margin-bottom: .5em;
+    }
+
+    #hourly-weather {
+        display: none;
     }
 
     #current_div {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
         font-size: 12pt;
         text-align: center;
@@ -198,14 +232,26 @@ body{
         display: flex;
         flex-flow: row wrap;
         flex-direction: column;
-        border:2px solid;
+        border: 2px solid;
         height: 280px;
         display: flex;
         flex-wrap: wrap;
     }
+
+    #current-condition {
+        margin-top: 1em;
+        margin-left: auto;
+        order: 1;
+    }
+
+    #hi-lo {
+        font-size: 16pt;
+        order: 2;
+    }
+
     #advertisement-tablet{
         list-style: none;
-        order: 1;
+        order: 3;
         align-content: center;
         display: block;
     }
@@ -245,6 +291,35 @@ body{
 /* Large (Desktop) sized screen*/
 @media only screen and (min-width: 1024px) {
 
+
+    #page-search {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #city-date {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 20pt;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
     body {
         background-color: green;
     }
@@ -280,9 +355,9 @@ body{
 
     #current_div {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
-        font-size: 12pt;
+        font-size: 16pt;
         text-align: center;
         list-style: none;
 
@@ -294,6 +369,14 @@ body{
         display: flex;
         flex-wrap: wrap;
     }
+    #current-conditions {
+        font-size: 12pt;
+    }
+
+    #hi-lo {
+        font-size: 20pt;
+    }
+
     #map{
         list-style: none;
         order: 1;
@@ -312,7 +395,7 @@ body{
 
     #desktop_final {
         margin: .5%;
-        background-color: royalblue;
+        background-color: cornflowerblue;
         border: 2px groove black;
         font-size: 12pt;
         text-align: center;
@@ -321,9 +404,9 @@ body{
         display: flex;
         flex-flow: row wrap;
         flex-direction: row;
-        border:2px solid;
+        border: 2px solid;
         height: 330px;
-        width: 100%;
+        width: auto;
         display: flex;
         flex-wrap: wrap;
         align-items: stretch;
@@ -350,3 +433,4 @@ body{
         width: 270px;
         order: 3;
     }
+
