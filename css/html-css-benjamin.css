@@ -426,6 +426,12 @@ body{
         width: 280px;
         order: 1;
     }
+    #current_weather_rainy {
+        margin: .5%;
+        display: inline-block;
+        width: 280px;
+        order: 1;
+    }
     #current_weather_sunny1 {
         width: 280px;
     }
